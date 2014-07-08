@@ -1,0 +1,51 @@
+<div ng-controller="InputCtrl" class="form-wrapper">
+	<form class="form-inputs" novalidate name="inputForm" ng-submit="validateForm(details)">
+		<header>
+			<h2>Signature Generator</h2>
+		</header>
+	    <fieldset ng-class="{expanded: model.signatureIsSelected}">
+	        <!-- <legend>Screen Interactions signature generator</legend> -->
+
+				<h3>1. Fill in your details</h3>
+	            <input
+	            	type="text"
+	            	name="firstName"
+	            	placeholder="name"
+	            	ng-model="details.name"
+	            	required
+	            >
+	            <div class="error" ng-show="showValidation">
+	                <span class="error-message">
+	                	{{getError(inputForm.firstName.$error)}}
+	                </span>
+	            </div>
+	            <input type="text" name="title" placeholder="title" ng-model="details.title" required>
+	            <div class="error" ng-show="showValidation">
+	            	<span class="error-message">
+	            		{{getError(inputForm.title.$error)}}
+	            	</span>
+	            </div>
+	            <input type="text" placeholder="mobile number (optional)" ng-model="details.phone" ng-focus="onPhoneFocus(details.phone)" ng-blur="onPhoneBlur(details.phone)">
+	            <input type="text" placeholder="twitter handle (optional)" ng-model="details.twitter">
+	            <input type="text" placeholder="skype username (optional)" ng-model="details.skype">
+	            <input type="email" name="email" placeholder="e-mail" ng-model="details.email" required>
+	            <div class="error" ng-show="showValidation">
+	            	<span class="error-message">
+	            		{{getError(inputForm.email.$error)}}
+	            	</span>
+	            </div>
+	            <!-- <button>Add input</button> -->
+
+				<h3>2. Then click <button type="submit" class="this-button" ng-click="inputForm.$valid ? selectSignature() : '';">this button</button> to select the signature</h3>
+
+				<div class="show-hide-step" ng-if="model.signatureIsSelected">
+					<h3>3. Smashing! Press <span class="key" ng-class="{active: model.keydown.cmd}">cmd</span><span class="key" ng-class="{active: model.keydown.cmd && model.keydown.c}">-</span><span class="key" ng-class="{active: model.keydown.c}">c</span> to copy.</h3>
+				</div>
+
+
+				<h3 ng-show="model.readyForPasting">4. Now go to your <a target="_blank" href="https://mail.google.com/mail/u/0/#settings/general">Gmail settings</a> and paste it in.
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;Enjoy your new signature!</h3>
+
+	    </fieldset>
+	</form>
+</div>
