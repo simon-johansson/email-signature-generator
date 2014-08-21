@@ -1,15 +1,138 @@
-<div class="row" ng-controller="AppCtrl">
+<!-- <div class="row" ng-controller="AppCtrl">
     <div class="large-4 large-offset-1 columns">
-
-    <div ng-include="'views/partials/signature-form.html'"></div>
-
-
+    	<div ng-include="'views/partials/signature-form.html'"></div>
     </div>
     <div class="large-6 columns">
-
         <br>
-
         <div ng-include="'views/partials/gmail-mail.html'"></div>
-
     </div>
+</div> -->
+
+<header>
+	<div class="upper-header row">
+		<div class="logo">
+			<img src="images/logo.png" alt="">
+		</div>
+		<div class="search-input">
+			<div class="input-wrapper">
+		    	<input type="text" placeholder="">
+				<span class="icon-search"></span>
+			</div>
+		</div>
+		<div class="pull-right">
+			<img src="images/top-bar-icons.png" alt="">
+			<div class="bubble">
+				<span>Sha</span>
+			</div>
+			<img class="profile-img" src="https://lh3.googleusercontent.com/-yGZCx3z_VEo/AAAAAAAAAAI/AAAAAAAAAAA/9o_0Ty6a5wQ/photo.jpg" alt="">
+
+		</div>
+	</div>
+	<div class="lower-header">
+		<div>
+			<h2>FakeMail</h2>
+		</div>
+		<div>
+			<div class="btn">
+				<span class="checkbox"></span>
+			</div>
+			<div class="btn">
+				<i class="refresh"></i>
+			</div>
+			<div class="btn">
+				<span>More</span>
+			</div>
+		</div>
+		<div class="pull-right">
+			<div class="btn">
+				<i class="settings"></i>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="sidebar">
+	<button class="btn tiny">COMPOSE</button>
+	<ul>
+		<li class="active">Inbox</li>
+		<li>Starred</li>
+		<li>Imported</li>
+		<li>Sent Mail</li>
+		<li>Drafts</li>
+		<li>Circles</li>
+	</ul>
+	<div class="profile-info">
+		<img class="profile-img" src="https://lh3.googleusercontent.com/-yGZCx3z_VEo/AAAAAAAAAAI/AAAAAAAAAAA/9o_0Ty6a5wQ/photo.jpg" alt="">
+		<p>Name</p>
+		<div class="btn">
+			<i class="search-small"></i>
+		</div>
+		<div class="yellow-box">
+			Lo rem ip sum dolor sit amet, conse ctet rip i si cing elit. Ev eni et, inc.
+		</div>
+	</div>
+</div>
+
+<div class="mail-content">
+	<section class="unread-mails">
+		<p>Unread</p>
+		<div class="mail">
+			<span class="checkbox"></span>
+			<span class="star active"></span>
+			<span class="important active"></span>
+			<span class="author">simon johansson</span>
+			<span class="title">Lorem ipsum dolor sit.</span>
+			<span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias eum nam est, et aspernatur inventore minima! Dolor, animi cumque!</span>
+			<span class="date">da</span>
+		</div>
+		<div class="mail">
+			<span class="checkbox"></span>
+			<span class="star"></span>
+			<span class="important"></span>
+			<span class="author">simon johansson</span>
+			<span class="title">Lorem ipsum dolor sit.</span>
+			<span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias eum nam est, et aspernatur inventore minima! Dolor, animi cumque!</span>
+			<span class="date">da</span>
+		</div>
+		<div class="mail">
+			<span class="checkbox"></span>
+			<span class="star"></span>
+			<span class="important"></span>
+			<span class="author">simon johansson</span>
+			<span class="title">Lorem ipsum dolor sit.</span>
+			<span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias eum nam est, et aspernatur inventore minima! Dolor, animi cumque!</span>
+			<span class="date">da</span>
+		</div>
+		<div class="mail">
+			<span class="checkbox"></span>
+			<span class="star"></span>
+			<span class="important"></span>
+			<span class="author">simon johansson</span>
+			<span class="title">Lorem ipsum dolor sit.</span>
+			<span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias eum nam est, et aspernatur inventore minima! Dolor, animi cumque!</span>
+			<span class="date">da</span>
+		</div>
+	</section>
+
+	<section class="read-mails">
+		<p>Read</p>
+		<div class="mail read">
+			<span class="checkbox"></span>
+			<span class="star"></span>
+			<span class="important"></span>
+			<span class="author">simon johansson</span>
+			<span class="title">Lorem ipsum dolor sit.</span>
+			<span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias eum nam est, et aspernatur inventore minima! Dolor, animi cumque!</span>
+			<span class="date">da</span>
+		</div>
+		<div class="mail read">
+			<span class="checkbox"></span>
+			<span class="star"></span>
+			<span class="important"></span>
+			<span class="author">simon johansson</span>
+			<span class="title">Lorem ipsum dolor sit.</span>
+			<span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias eum nam est, et aspernatur inventore minima! Dolor, animi cumque!</span>
+			<span class="date">da</span>
+		</div>
+	</section>
 </div>
